@@ -20,3 +20,14 @@ console.log(
     client instanceof Db.Client,
     client.ready == false
 )
+
+var options= {}
+var db= Db.connect(options, function (err, db) {
+    console.log(
+        err === null,
+        db instanceof Db.Client
+    )
+})
+console.log(
+    db instanceof Db
+)

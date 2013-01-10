@@ -1,0 +1,38 @@
+{
+  "name": "some-db",
+  "version": "0.0.1",
+  "description": "some database dsl",
+  "keywords": [
+    "some", "db", "domain", "specific", "language",
+    "async", "db", "mapper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freaking-awesome/some-db.git"
+  },
+  "author": [
+    {
+      "name": "Teh Freak",
+      "email": "tehfreak@awesome39.com"
+    },
+    {
+      "name": "Free Kode",
+      "email": "freekode@awesome39.com"
+    }
+  ],
+  "main": "./lib/Db",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "dependencies": {
+    "some-model": "https://github.com/freaking-awesome/some-model/archive/master.tar.gz"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "license": "MIT"
+}

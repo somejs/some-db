@@ -11,8 +11,8 @@ console.log(
     db.connect.length === 2
 )
 console.log(
-    db.connect instanceof Function,
-    db.connect.length === 2
+    db.send instanceof Function,
+    db.send.length === 2
 )
 
 var client= new Db.Client

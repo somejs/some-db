@@ -1,6 +1,6 @@
 {
   "name": "some-db",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "some database dsl",
   "keywords": [
     "some", "db", "domain", "specific", "language",
@@ -25,7 +25,7 @@
     "test": "mocha --reporter spec"
   },
   "dependencies": {
-    "some-model": "https://github.com/freaking-awesome/some-model/archive/master.tar.gz"
+    "some-model": "https://github.com/somejs/some-model/archive/master.tar.gz"
   },
   "devDependencies": {
     "mocha": "*",

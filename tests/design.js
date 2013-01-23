@@ -11,6 +11,10 @@ console.log(
     db.connect.length === 2
 )
 console.log(
+    db.query instanceof Function,
+    db.query.length === 2
+)
+console.log(
     db.send instanceof Function,
     db.send.length === 2
 )
@@ -24,7 +28,7 @@ console.log(
 var options= {}
 var db= Db.connect(options, function (err, db) {
     console.log(
-        err === null,
+        !!err,
         db instanceof Db.Client
     )
 })

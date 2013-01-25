@@ -35,3 +35,20 @@ var db= Db.connect(options, function (err, db) {
 console.log(
     db instanceof Db
 )
+
+// Клиент базы данных
+console.log( // является конструктором
+    Db.Client instanceof Function
+)
+console.log( // конструктором определенной схемы
+    Db.Client.properties.type instanceof Db.Client.Property,
+    Db.Client.properties.observers instanceof Db.Client.Property,
+    Db.Client.properties.options instanceof Db.Client.Property,
+    Db.Client.properties.ready instanceof Db.Client.Property
+)
+var client= new Db.Client
+console.log(
+    client.options instanceof Object,
+    client.ready === false,
+    client.observers instanceof Array, client.observers.length === 0
+)

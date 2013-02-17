@@ -1,6 +1,6 @@
 {
   "name": "some-db",
-  "version": "0.3.3",
+  "version": "0.3.5",
   "description": "some database dsl",
   "keywords": [
     "some", "db", "domain", "specific", "language",
